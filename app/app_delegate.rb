@@ -4,8 +4,8 @@ class AppDelegate
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     @window.makeKeyAndVisible
 
-    controller = NameController.alloc.initWithNibName(nil, bundle:nil)
-    @window.rootViewController = controller
+    name_controller = NameController.alloc.initWithNames()
+    @window.rootViewController = name_controller 
 
     true
   end
