@@ -37,6 +37,10 @@ class NameController < UIViewController
     @data.count
   end
 
+  def sectionIndexTitlesForTableView(tableView)
+    ('A'..'Z').to_a
+  end
+
   def get_names(&block)
 #    raise ArgumentError, "invalid gender type #{gender}" unless ['male','female'].include? gender
     # TODO: figure out the timing of this request
